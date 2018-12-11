@@ -43,3 +43,7 @@ lane :beta do
     build_type: 'debug'
   )
 end
+
+lane :tests do
+  gradle(task: "testDebugUnitTest")
+end
